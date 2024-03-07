@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		D20D9EF32B99467E00D183BA /* DragAndDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D9EF22B99467E00D183BA /* DragAndDropView.swift */; };
 		D20D9EF62B9949A200D183BA /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D20D9EF52B9949A200D183BA /* Algorithms */; };
+		D20D9EFA2B995B6400D183BA /* ImageCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D9EF92B995B6400D183BA /* ImageCircle.swift */; };
+		D20D9EFD2B995CB500D183BA /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D9EFC2B995CB500D183BA /* SymbolView.swift */; };
+		D20D9F0D2B99964E00D183BA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D9F0C2B99964E00D183BA /* SwiftUIView.swift */; };
+		D20D9F0F2B9996D000D183BA /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D9F0E2B9996D000D183BA /* BasicView.swift */; };
+		D20D9F122B999CE800D183BA /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D9F112B999CE800D183BA /* StateView.swift */; };
+		D20D9F142B999D0600D183BA /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D9F132B999D0600D183BA /* BindingView.swift */; };
 		D2C8DCB42B95AB3C00F50D27 /* AppAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCB32B95AB3C00F50D27 /* AppAnimationApp.swift */; };
 		D2C8DCB62B95AB3C00F50D27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCB52B95AB3C00F50D27 /* ContentView.swift */; };
 		D2C8DCB82B95AB3C00F50D27 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCB72B95AB3C00F50D27 /* Item.swift */; };
@@ -39,6 +45,12 @@
 /* Begin PBXFileReference section */
 		D20D9EF22B99467E00D183BA /* DragAndDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropView.swift; sourceTree = "<group>"; };
 		D20D9EF72B99574F00D183BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D20D9EF92B995B6400D183BA /* ImageCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCircle.swift; sourceTree = "<group>"; };
+		D20D9EFC2B995CB500D183BA /* SymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
+		D20D9F0C2B99964E00D183BA /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		D20D9F0E2B9996D000D183BA /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
+		D20D9F112B999CE800D183BA /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		D20D9F132B999D0600D183BA /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		D2C8DCB02B95AB3C00F50D27 /* AppAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C8DCB32B95AB3C00F50D27 /* AppAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAnimationApp.swift; sourceTree = "<group>"; };
 		D2C8DCB52B95AB3C00F50D27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +90,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D20D9EF82B995B4500D183BA /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D20D9EF92B995B6400D183BA /* ImageCircle.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		D20D9EFB2B995CA500D183BA /* Symbol */ = {
+			isa = PBXGroup;
+			children = (
+				D20D9EFC2B995CB500D183BA /* SymbolView.swift */,
+			);
+			path = Symbol;
+			sourceTree = "<group>";
+		};
+		D20D9F102B999CD400D183BA /* learn */ = {
+			isa = PBXGroup;
+			children = (
+				D20D9F112B999CE800D183BA /* StateView.swift */,
+				D20D9F132B999D0600D183BA /* BindingView.swift */,
+			);
+			path = learn;
+			sourceTree = "<group>";
+		};
 		D2C8DCA72B95AB3C00F50D27 = {
 			isa = PBXGroup;
 			children = (
@@ -173,8 +210,10 @@
 		D2C8DCE32B95AD5900F50D27 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D20D9F102B999CD400D183BA /* learn */,
+				D20D9EFB2B995CA500D183BA /* Symbol */,
+				D20D9EF82B995B4500D183BA /* Image */,
 				D2C8DCE62B95AD8800F50D27 /* Animation */,
-				D2C8DCE52B95AD7700F50D27 /* User */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -186,35 +225,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		D2C8DCE52B95AD7700F50D27 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				D2C8DCE82B95AE9900F50D27 /* UserModel */,
-				D2C8DCE72B95AD9200F50D27 /* UserView */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
 		D2C8DCE62B95AD8800F50D27 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
 				D20D9EF22B99467E00D183BA /* DragAndDropView.swift */,
+				D20D9F0C2B99964E00D183BA /* SwiftUIView.swift */,
+				D20D9F0E2B9996D000D183BA /* BasicView.swift */,
 			);
 			path = Animation;
-			sourceTree = "<group>";
-		};
-		D2C8DCE72B95AD9200F50D27 /* UserView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserView;
-			sourceTree = "<group>";
-		};
-		D2C8DCE82B95AE9900F50D27 /* UserModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +371,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20D9EFD2B995CB500D183BA /* SymbolView.swift in Sources */,
+				D20D9F0D2B99964E00D183BA /* SwiftUIView.swift in Sources */,
+				D20D9F142B999D0600D183BA /* BindingView.swift in Sources */,
 				D2C8DCB62B95AB3C00F50D27 /* ContentView.swift in Sources */,
 				D20D9EF32B99467E00D183BA /* DragAndDropView.swift in Sources */,
+				D20D9EFA2B995B6400D183BA /* ImageCircle.swift in Sources */,
 				D2C8DCB82B95AB3C00F50D27 /* Item.swift in Sources */,
+				D20D9F122B999CE800D183BA /* StateView.swift in Sources */,
 				D2C8DCB42B95AB3C00F50D27 /* AppAnimationApp.swift in Sources */,
+				D20D9F0F2B9996D000D183BA /* BasicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
