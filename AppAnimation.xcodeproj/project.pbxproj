@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20D9EF32B99467E00D183BA /* DragAndDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D9EF22B99467E00D183BA /* DragAndDropView.swift */; };
+		D20D9EF62B9949A200D183BA /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D20D9EF52B9949A200D183BA /* Algorithms */; };
 		D2C8DCB42B95AB3C00F50D27 /* AppAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCB32B95AB3C00F50D27 /* AppAnimationApp.swift */; };
 		D2C8DCB62B95AB3C00F50D27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCB52B95AB3C00F50D27 /* ContentView.swift */; };
 		D2C8DCB82B95AB3C00F50D27 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCB72B95AB3C00F50D27 /* Item.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D20D9EF22B99467E00D183BA /* DragAndDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropView.swift; sourceTree = "<group>"; };
+		D20D9EF72B99574F00D183BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D2C8DCB02B95AB3C00F50D27 /* AppAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C8DCB32B95AB3C00F50D27 /* AppAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAnimationApp.swift; sourceTree = "<group>"; };
 		D2C8DCB52B95AB3C00F50D27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20D9EF62B9949A200D183BA /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +101,7 @@
 		D2C8DCB22B95AB3C00F50D27 /* AppAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				D20D9EF72B99574F00D183BA /* Info.plist */,
 				D2C8DCE42B95AD6E00F50D27 /* UI */,
 				D2C8DCE32B95AD5900F50D27 /* Modules */,
 				D2C8DCE12B95AD3D00F50D27 /* Services */,
@@ -192,6 +198,7 @@
 		D2C8DCE62B95AD8800F50D27 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				D20D9EF22B99467E00D183BA /* DragAndDropView.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -226,6 +233,9 @@
 			dependencies = (
 			);
 			name = AppAnimation;
+			packageProductDependencies = (
+				D20D9EF52B9949A200D183BA /* Algorithms */,
+			);
 			productName = AppAnimation;
 			productReference = D2C8DCB02B95AB3C00F50D27 /* AppAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +308,9 @@
 				Base,
 			);
 			mainGroup = D2C8DCA72B95AB3C00F50D27;
+			packageReferences = (
+				D20D9EF42B9949A200D183BA /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = D2C8DCB12B95AB3C00F50D27 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C8DCB62B95AB3C00F50D27 /* ContentView.swift in Sources */,
+				D20D9EF32B99467E00D183BA /* DragAndDropView.swift in Sources */,
 				D2C8DCB82B95AB3C00F50D27 /* Item.swift in Sources */,
 				D2C8DCB42B95AB3C00F50D27 /* AppAnimationApp.swift in Sources */,
 			);
@@ -509,6 +523,7 @@
 				DEVELOPMENT_TEAM = YAH93RZF3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppAnimation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -538,6 +553,7 @@
 				DEVELOPMENT_TEAM = YAH93RZF3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppAnimation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -672,6 +688,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D20D9EF42B9949A200D183BA /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D20D9EF52B9949A200D183BA /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D20D9EF42B9949A200D183BA /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2C8DCA82B95AB3C00F50D27 /* Project object */;
 }

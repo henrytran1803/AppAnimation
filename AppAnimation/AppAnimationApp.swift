@@ -25,7 +25,7 @@ struct AppAnimationApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DragAndDropView()
         }
         .modelContainer(sharedModelContainer)
     }
