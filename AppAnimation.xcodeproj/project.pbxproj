@@ -23,6 +23,10 @@
 		D2C8DCC72B95AB3F00F50D27 /* AppAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCC62B95AB3F00F50D27 /* AppAnimationTests.swift */; };
 		D2C8DCD12B95AB3F00F50D27 /* AppAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCD02B95AB3F00F50D27 /* AppAnimationUITests.swift */; };
 		D2C8DCD32B95AB3F00F50D27 /* AppAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C8DCD22B95AB3F00F50D27 /* AppAnimationUITestsLaunchTests.swift */; };
+		D2E716842BA29F1100DFC118 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E716832BA29F1100DFC118 /* model.swift */; };
+		D2E716862BA29F6000DFC118 /* SwiftDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E716852BA29F6000DFC118 /* SwiftDataView.swift */; };
+		D2E716882BA2A19F00DFC118 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E716872BA2A19F00DFC118 /* UserView.swift */; };
+		D2E7168A2BA2EB0100DFC118 /* ListUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E716892BA2EB0100DFC118 /* ListUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		D2C8DCCC2B95AB3F00F50D27 /* AppAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C8DCD02B95AB3F00F50D27 /* AppAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAnimationUITests.swift; sourceTree = "<group>"; };
 		D2C8DCD22B95AB3F00F50D27 /* AppAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2E716832BA29F1100DFC118 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		D2E716852BA29F6000DFC118 /* SwiftDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataView.swift; sourceTree = "<group>"; };
+		D2E716872BA2A19F00DFC118 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		D2E716892BA2EB0100DFC118 /* ListUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +218,7 @@
 		D2C8DCE32B95AD5900F50D27 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D2E716802BA29C0F00DFC118 /* SwiftData */,
 				D20D9F102B999CD400D183BA /* learn */,
 				D20D9EFB2B995CA500D183BA /* Symbol */,
 				D20D9EF82B995B4500D183BA /* Image */,
@@ -233,6 +242,17 @@
 				D20D9F0E2B9996D000D183BA /* BasicView.swift */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		D2E716802BA29C0F00DFC118 /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				D2E716832BA29F1100DFC118 /* model.swift */,
+				D2E716852BA29F6000DFC118 /* SwiftDataView.swift */,
+				D2E716872BA2A19F00DFC118 /* UserView.swift */,
+				D2E716892BA2EB0100DFC118 /* ListUserView.swift */,
+			);
+			path = SwiftData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,16 +391,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E716862BA29F6000DFC118 /* SwiftDataView.swift in Sources */,
 				D20D9EFD2B995CB500D183BA /* SymbolView.swift in Sources */,
 				D20D9F0D2B99964E00D183BA /* SwiftUIView.swift in Sources */,
+				D2E716842BA29F1100DFC118 /* model.swift in Sources */,
 				D20D9F142B999D0600D183BA /* BindingView.swift in Sources */,
 				D2C8DCB62B95AB3C00F50D27 /* ContentView.swift in Sources */,
 				D20D9EF32B99467E00D183BA /* DragAndDropView.swift in Sources */,
 				D20D9EFA2B995B6400D183BA /* ImageCircle.swift in Sources */,
 				D2C8DCB82B95AB3C00F50D27 /* Item.swift in Sources */,
 				D20D9F122B999CE800D183BA /* StateView.swift in Sources */,
+				D2E716882BA2A19F00DFC118 /* UserView.swift in Sources */,
 				D2C8DCB42B95AB3C00F50D27 /* AppAnimationApp.swift in Sources */,
 				D20D9F0F2B9996D000D183BA /* BasicView.swift in Sources */,
+				D2E7168A2BA2EB0100DFC118 /* ListUserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
